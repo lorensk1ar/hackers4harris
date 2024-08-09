@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         // Send POST request to the Flask back-end
-        fetch('https://your-flask-backend.herokuapp.com/api/signup', {
+        fetch('https://hackers4harris.herokuapp.com/api/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
