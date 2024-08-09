@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Banner Section -->
+    <header>
+        <h1>Got 10 hours to save democracy?</h1>
+    </header>
+
+    <!-- Form Section -->
+    <main>
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="zipCode">Zip Code:</label>
+                <input type="text" id="zipCode" name="zipCode" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Select Commitment:</label>
+                <button type="button" class="hourButton" data-hours="10/week">10 hours / week</button>
+                <button type="button" class="hourButton" data-hours="10/month">10 hours / month</button>
+                <button type="button" class="hourButton" data-hours="10/year">10 hours / year</button>
+            </div>
+            <input type="hidden" id="hoursCommitted" name="hoursCommitted">
+            <button type="submit">Submit</button>
+        </form>
+        <div id="responseMessage"></div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
